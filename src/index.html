@@ -3,14 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ts-tailwind template</title>
-    <link href="../dist/main.css" rel="stylesheet" />
+    <title>Typescript-tailwind - Calculator</title>
+    <link rel="stylesheet" href="../dist/main.css" />
+    <script src="../dist/index.js"></script>
   </head>
-  <body>
-    <div class="flex w-full h-screen justify-center items-center">
-        <div class="flex text-orange-500 text-3xl">
-            Yeey, I am in center
-        </div>
+  <body class="bg-gray-200">
+    <div class="flex justify-center items-center h-screen">
+      <div class="grid grid-cols-4 w-96 bg-white rounded-lg">
+        <div class="col-span-3 bg-white"></div>
+        <button class="bg-cyan-500 text-white col-span-1 px-16 py-8">AC</button>
+
+        <button class="bg-black text-white px-16 py-8">7</button>
+        <button class="bg-black text-white px-16 py-8">8</button>
+        <button class="bg-black text-white px-16 py-8">9</button>
+        <button class="bg-gray-500 text-white px-16 py-8">+</button>
+
+        <button class="bg-black text-white px-16 py-8">4</button>
+        <button class="bg-black text-white px-16 py-8">5</button>
+        <button class="bg-black text-white px-16 py-8">6</button>
+        <button class="bg-gray-500 text-white px-16 py-8">-</button>
+
+        <button class="bg-black text-white px-16 py-8">1</button>
+        <button class="bg-black text-white px-16 py-8">2</button>
+        <button class="bg-black text-white px-16 py-8">3</button>
+        <button class="bg-gray-500 text-white px-16 py-8">/</button>
+
+        <button class="bg-black text-white px-16 py-8">.</button>
+        <button class="bg-black text-white px-16 py-8">0</button>
+        <button class="bg-black text-white px-16 py-8">=</button>
+        <button class="bg-gray-500 text-white px-16 py-8">*</button>
+      </div>
     </div>
     <script src="../dist/index.js"></script>
   </body>
